@@ -93,6 +93,8 @@ class Hero(GameObject):
             self.rect.y -= 5
         elif keys[pygame.K_DOWN] or keys[pygame.K_s]:
             self.rect.y += 5
+        elif self.state == "attacking":
+            pass
         else:
             self.state = "standing"
     
